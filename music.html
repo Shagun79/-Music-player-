@@ -1,47 +1,46 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Music Player</title>
-    <link rel="stylesheet" href="/music.css">
-
-</head>
-<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/music.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="music-player">
-            <nav>
-                 <button>
-                    <img src="/img/icons8-double-left-50.png" alt="">
-                </button>
-                       <button>
-                      
-                         <img src="/img/icons8-menu-50.png" alt="">
-                            </button>
-            </nav>
-            <img src="/img/Jutti-Meri-Live-1.jpg" alt="" class="jutti-img">
-            <h1>Jutti Meri</h1>
-            <p> Neha Bhasin</p>
-            <audio   controls id="song">
-                <source src="/img/Jutti_Meri_Live_.mp3" type="audio/mp3"> 
-              </audio>
-              <input type="range" value="0" id="progress">
-              <div class="controls">
-                <div> <img src="/img/icons8-fast-forward-30.png" alt=""></div>
-                <div> <img src="/img/icons8-play-30 (1).png" alt="" id="ctrlIcon"></div>
-                <div><img src="/img/icons8-rewind-50.png" alt="" class="arrow"></div>
+      <div class="music-player">
+        <nav>
+          <button>
+            <img src="/img/icons8-double-left-50.png" alt="" />
+          </button>
+          <button>
+            <img src="/img/icons8-menu-50.png" alt="" />
+          </button>
+        </nav>
+        <img src="/img/Jutti-Meri-Live-1.jpg" alt="" class="jutti-img" />
+        <h1>Jutti Meri</h1>
+        <p>Neha Bhasin</p>
+        <audio controls id="song">
+          <source src="/img/Jutti_Meri_Live_.mp3" type="audio/mp3" />
+        </audio>
+        <input type="range" value="0" id="progress" />
+      <div class="controls">
+        <button><i class="fa fa-backward" id="prev"></i  > 
 
-              </div>
+        </button> 
+        <button onclick="PlayPause()">
+          <i class="fa fa-play" id="ctrlIcon"></i  >
+        </button>       
+         <button>
+          <i class="fa fa-forward " id="prev"></i  > 
+         </button>
+           
 
-
-
-
-        </div>
+      </div>
+      </div>
     </div>
 
-
-
     <script src="/music.js"></script>
-</body>
+  </body>
 </html>
